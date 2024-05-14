@@ -15,7 +15,7 @@ import {
   ProjectDeleteButton,
   ManageExplainContainer,
 } from './styled'
-import { SearchMemberSection } from './SearchMemberSection'
+// import { SearchMemberSection } from './SearchMemberSection'
 import { ApproveMemberSection } from './ApproveMemberSection'
 import { ChangeProjectSection } from './ChangeProjectSection'
 import { ManageMemberSection } from './ManageMemberSection'
@@ -33,9 +33,31 @@ const onChange = (key: string) => {
 // 여기에 들어갈 json 데이터 정의 필요! + Tabs 컴포넌트 사용하기(antd)
 export const UserProjectManagePage: FC<UserProjectManagePageProps> = ({ className }) => {
   const navigate = useNavigate()
-  const { projectKey = 0 } = useParams()
-  const { projectTitle = "프로젝트 제목" } = useParams()
-  
+  // const { projectKey = 0 } = useParams()
+  const { projectTitle = '프로젝트 제목' } = useParams()
+
+  // const items: TabsProps['items'] = [
+  //   {
+  //     key: '1',
+  //     label: `참여멤버 관리`,
+  //     children: <ManageMemberSection />,
+  //   },
+  //   {
+  //     key: '2',
+  //     label: `추천멤버 조회`,
+  //     children: <SearchMemberSection projectKey={projectKey}/>,
+  //   },
+  //   {
+  //     key: '3',
+  //     label: `멤버 지원승인`,
+  //     children: <ApproveMemberSection />,
+  //   },
+  //   {
+  //     key: '4',
+  //     label: `게시글 수정`,
+  //     children: <ChangeProjectSection />,
+  //   }
+  // ]
   const items: TabsProps['items'] = [
     {
       key: '1',
@@ -44,25 +66,20 @@ export const UserProjectManagePage: FC<UserProjectManagePageProps> = ({ classNam
     },
     {
       key: '2',
-      label: `추천멤버 조회`,
-      children: <SearchMemberSection projectKey={projectKey}/>,
-    },
-    {
-      key: '3',
       label: `멤버 지원승인`,
       children: <ApproveMemberSection />,
     },
     {
-      key: '4',
+      key: '3',
       label: `게시글 수정`,
       children: <ChangeProjectSection />,
-    }
+    },
   ]
 
   const onClickProjectDelete = () => {
     navigate('/')
     // eslint-disable-next-line no-undef
-    alert("프로젝트가 삭제되었습니다.")
+    alert('프로젝트가 삭제되었습니다.')
   }
   // const manageProjectListData = camelizeKey(manageProjectListSampleJson.project_list) as ManageProjectListType
   // const expireProjectListData = camelizeKey(expireProjectListSampleJson.project_list) as ExpireProjectListType

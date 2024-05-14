@@ -8,7 +8,7 @@ import { ProjectItemType, ProjectListType } from 'types/project'
 import { camelizeKey } from 'utils/camelizeKey'
 import { generateRandomProjectCardLogoImg } from 'utils/generateRandomProjectCardLogoImg'
 import { getDevelopmentStackColor, translateDevelopmentStack } from 'utils/translateDevelopmentStack'
-import { HeartOutlined, HeartFilled } from '@ant-design/icons'
+// import { HeartOutlined, HeartFilled } from '@ant-design/icons'
 // import { translateProjectPosition } from 'utils/translatePosition'
 import {
   BannerImg,
@@ -24,7 +24,7 @@ import {
   MenuContainer,
   MenuCountContainer,
   MenuCountDivider,
-  MenuCountLikeTypo,
+  // MenuCountLikeTypo,
   MenuCountVisitedTypo,
   MenuLeaderUserInfoContainer,
   MenuLeaderUserInfoNameTypo,
@@ -43,12 +43,12 @@ import {
   SideSectionProjectTypeTitleTypo,
   SideSectionProjectTypeTypo,
   SideSectionRequireMemberContainer,
-  SideSectionRequireMemberContentContainer,
-  SideSectionRequireMemberItemContainer,
-  SideSectionRequireMemberItemTypo,
-  SideSectionRequireMemberTitleTypo,
+  // SideSectionRequireMemberContentContainer,
+  // SideSectionRequireMemberItemContainer,
+  // SideSectionRequireMemberItemTypo,
+  // SideSectionRequireMemberTitleTypo,
   TitleTypo,
-  LikeButton,
+  // LikeButton,
 } from './styled'
 import { GetProjectDetailsRequestType, GetProjectDetailsResponseType, getProjectDetails } from 'api/getProjectDetails'
 import { List, Space, Tag } from 'antd'
@@ -82,11 +82,11 @@ export const ProjectDetailsDonggukPage: FC<ProjectDetailsPageProps> = ({ classNa
   const projectListSampleData: ProjectListType = camelizeKey(projectListSampleJson.project_list) as ProjectListType
   const [projectItem, setProjectItem] = useState<ProjectItemType>()
 
-  const [liked, setLiked] = useState(false)
+  // const [liked, setLiked] = useState(false)
 
-  const handleLikeToggle = () => {
-    setLiked((prevLiked) => !prevLiked)
-  }
+  // const handleLikeToggle = () => {
+  //   setLiked((prevLiked) => !prevLiked)
+  // }
 
   const onClickProjectManage = (projectTitle: string) => {
     navigate(`/user/project/manage/${projectKey}/${projectTitle}`)
@@ -188,8 +188,8 @@ export const ProjectDetailsDonggukPage: FC<ProjectDetailsPageProps> = ({ classNa
               <MenuCountContainer>
                 <MenuCountVisitedTypo>조회수: {projectItem.visitedNumber}회</MenuCountVisitedTypo>
                 <MenuCountDivider />
-                <MenuCountLikeTypo>좋아요: {projectItem.likeNumber}회</MenuCountLikeTypo>
-                <LikeButton onClick={handleLikeToggle}>{liked ? <HeartFilled /> : <HeartOutlined />}</LikeButton>
+                {/* <MenuCountLikeTypo>좋아요: {projectItem.likeNumber}회</MenuCountLikeTypo>
+                <LikeButton onClick={handleLikeToggle}>{liked ? <HeartFilled /> : <HeartOutlined />}</LikeButton> */}
               </MenuCountContainer>
             </MenuContainer>
             <ContentContainer>
@@ -250,7 +250,7 @@ export const ProjectDetailsDonggukPage: FC<ProjectDetailsPageProps> = ({ classNa
               />
             </SideSectionProfileImgWrapper>
             <SideSectionRequireMemberContainer>
-              <SideSectionRequireMemberTitleTypo>모집 인원</SideSectionRequireMemberTitleTypo>
+              {/* <SideSectionRequireMemberTitleTypo>모집 인원</SideSectionRequireMemberTitleTypo>
               <SideSectionRequireMemberContentContainer>
                 {projectItem.requireMemberList.map((requireMemberItem, index) => (
                   <SideSectionRequireMemberItemContainer key={`side_section_require_member_item_${index}`}>
@@ -260,7 +260,7 @@ export const ProjectDetailsDonggukPage: FC<ProjectDetailsPageProps> = ({ classNa
                     <SideSectionRequireMemberItemTypo>0/{requireMemberItem.number}</SideSectionRequireMemberItemTypo>
                   </SideSectionRequireMemberItemContainer>
                 ))}
-              </SideSectionRequireMemberContentContainer>
+              </SideSectionRequireMemberContentContainer> */}
             </SideSectionRequireMemberContainer>
             <SideSectionDateRangeContainer>
               <SideSectionDateRangeTitleTypo>프로젝트 기간</SideSectionDateRangeTitleTypo>

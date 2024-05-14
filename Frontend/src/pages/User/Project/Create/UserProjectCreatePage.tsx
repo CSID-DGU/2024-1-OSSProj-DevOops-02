@@ -162,8 +162,8 @@ export const UserProjectCreatePage: FC<UserProjectCreatePageProps> = ({ classNam
         title: title,
         projectType: projectType, //학과
         requireMemberList: filteredrequireMemberList,
-        kindType: leaderDevelopmentStack, //모집종류
-        campus: location,
+        leaderDevelopmentStack: leaderDevelopmentStack, //모집종류
+        location: location,
         projectStartDate: projectStartDate,
         projectEndDate: projectEndDate,
         projectContent: projectContent,
