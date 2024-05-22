@@ -40,5 +40,4 @@ public class SpringConfig {
         return Mappers.getMapper(ProjectLikeMapper.class);
     }
 
-
 }
