@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Home</title>
+</head>
+<body>
+<h1>Welcome to the Home Page!</h1>
+<p th:if="${user != null}">
+  Logged in as: <span th:text="${user.email}"></span> (<span th:text="${user.nickname}"></span>)
+</p>
+<p th:if="${user == null}">
+  Not logged in.
+</p>
+</body>
+</html>

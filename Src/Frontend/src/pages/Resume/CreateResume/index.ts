@@ -1,1 +1,0 @@
-export { CreateResume } from './CreateResume'

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -50,4 +51,43 @@ public class UserService {
     public boolean testConnection() {
         return userRepository.count() >= 0; // 그냥 연결 확인용으로 count 쿼리 사용
     }
+
+    // 이력서 조회
+    public User getUserById(Long userId) {
+        return userRepository.findById(userId).orElse(null);
+    }
+
+
+    // 이력서 저장
+    public void saveResume(Long userId, String resume) {
+        User user = getUserById(userId);
+        if (user != null) {
+            user.setResume(resume);
+            userRepository.save(user);
+        } else {
+            throw new RuntimeException("User not found");
+        }
+    }
+
+    // 이력서 수정
+    public void updateResume(Long userId, String resume) {
+        User user = getUserById(userId);
+        if (user != null) {
+            userRepository.updateResume(resume, userId);
+        } else {
+            throw new RuntimeException("User not found");
+        }
+    }
+
+    // 이력서 삭제
+    public void deleteResume(Long userId) {
+        User user = getUserById(userId);
+        if (user != null) {
+            user.setResume(null);
+            userRepository.save(user);
+        } else {
+            throw new RuntimeException("User not found");
+        }
+    }
+
 }

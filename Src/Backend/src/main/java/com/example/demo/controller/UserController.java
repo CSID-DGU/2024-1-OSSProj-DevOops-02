@@ -1,8 +1,11 @@
 package com.example.demo.controller;
 
+import com.example.demo.domain.User;
 import com.example.demo.dto.UserDTO;
 import com.example.demo.service.UserService;
+import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
@@ -55,4 +58,46 @@ public class UserController {
             return "DB 연결 실패: " + e.getMessage();
         }
     }
+
+    // 이력서 관련 API
+    @GetMapping("/{userId}/resume/info")
+    public ResponseEntity<String> getResume(@PathVariable Long userId) {
+        User user = userService.getUserById(userId);
+        if (user != null && user.getResume() != null) {
+            return ResponseEntity.ok(user.getResume());
+        }
+        return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping("/{userId}/resume/create")
+    public ResponseEntity<String> saveResume(@PathVariable Long userId, @RequestBody String resume) {
+        try {
+            userService.saveResume(userId, resume);
+            return ResponseEntity.status(201).body("Resume created successfully");
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @PatchMapping("/{userId}/resume/modify")
+    public ResponseEntity<String> updateResume(@PathVariable Long userId, @RequestBody String resume) {
+        try {
+            userService.updateResume(userId, resume);
+            return ResponseEntity.ok("Resume updated successfully");
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @DeleteMapping("/{userId}/resume/remove")
+    public ResponseEntity<Void> deleteResume(@PathVariable Long userId) {
+        try {
+            userService.deleteResume(userId);
+            return ResponseEntity.noContent().build();
+        } catch (RuntimeException e) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
 }
