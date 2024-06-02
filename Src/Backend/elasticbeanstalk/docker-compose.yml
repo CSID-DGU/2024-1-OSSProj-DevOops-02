@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  backend:
+    image: "hojeong22/teameasy:latest"
+    ports:
+      - "80:8080"
+    restart: "always"
