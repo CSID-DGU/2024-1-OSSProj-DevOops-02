@@ -1,1 +1,0 @@
-export { CompetitionApproveMemberSection } from './ApproveMemberSection'
