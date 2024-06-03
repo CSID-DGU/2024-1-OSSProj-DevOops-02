@@ -26,7 +26,7 @@
 ## 제안발표
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/1_1_OSSProj_02_DevOops_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EC%84%9C.md'>수행계획서</a><br>
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/1_2_OSSProj_02_DevOops_%EC%88%98%ED%96%89%EA%B3%84%ED%9A%8D%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf'>발표자료</a><br>
-<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/1_4_OSSProj_02_DevOops_%ED%9A%8C%EC%9D%98%EB%A1%9D.pdf'>1_4_OSSProj_02_DevOops_회의록</a><br>
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/1_4_OSSProj_02_DevOops_%ED%9A%8C%EC%9D%98%EB%A1%9D.pdf'>회의록</a><br>
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/1_5_OSSProj_02_DevOops_%EB%B2%94%EC%9C%84_%EC%9D%BC%EC%A0%95_%EC%9D%B4%EC%8A%88%EA%B4%80%EB%A6%AC.pdf'>범위_일정_이슈관리</a><br>
 
 ## 중간발표
