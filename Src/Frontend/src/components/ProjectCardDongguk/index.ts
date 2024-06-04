@@ -1,0 +1,1 @@
+export { ProjectCardDongguk } from './ProjectCard'
