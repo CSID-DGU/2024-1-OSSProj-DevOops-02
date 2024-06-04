@@ -1,7 +1,32 @@
 version: "3.9"
 services:
+  db:
+    image: mysql:8.0
+    restart: always
+    container_name: database
+    environment:
+      MYSQL_DATABASE: testdb2
+      MYSQL_ROOT_PASSWORD: 5968
+    volumes:
+      - ./db/mysql/data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
   backend:
     image: "hojeong22/teameasy:latest"
     ports:
       - "80:8080"
-    restart: "always"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: always
+    container_name: teameasy
+    environment:
+      BACKEND_DB_URL: jdbc:mysql://db:3306/testdb2
+      BACKEND_DB_USERNAME: root
+      BACKEND_DB_PASSWORD: 5968
