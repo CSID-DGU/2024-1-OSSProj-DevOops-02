@@ -186,9 +186,9 @@
 
 3. 백엔드 개발
 <img src="../Src/img/ERD.png">
-\<ERD>
+[ERD]
 <img src="../Src/img/API명세.png">
-\<API 명세>
+[API 명세]
    - 엔티티 설계: 필요한 데이터 모델을 설계하고 ERD(Entity Relationship Diagram)를 작성
    - API 명세: 프론트엔드와 협력하여 API 명세 작성
    - 구현: 스프링 부트를 사용하여 백엔드 서버 개발, 주요 기능 구현 및 데이터베이스 연동
