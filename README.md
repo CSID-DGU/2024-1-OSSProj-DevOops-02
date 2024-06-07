@@ -1,6 +1,6 @@
 # 2024-1-OSSProj-DevOops-02
 
-## TeamEasy - 동국대학교 학생들을 위한 팀매칭 서비스
+<img src="Src/img/로고.png" >
 <p>* 본 프로젝트는 < <a>https://github.com/CSID-DGU/2023-1-OSSP1-colorful-7?tab=readme-ov-file</a>>프로젝트를 develop한 프로젝트입니다. 프론트 개발 디자인과 코드 스타일을 차용하였습니다.</p>
 
 ---
