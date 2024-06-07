@@ -22,23 +22,24 @@
 6. 학생들이 원하는 프로젝트를 등록하고, 다른 학생들이 참여할 수 있도록 도와주어 학생들이 원하는 프로젝트를 진행할 수 있도록 도움
 
 #### 2. 설계 및 구현
-- [프로젝트 구조]
+- [**프로젝트 구조**]
     <br>
     <img src="Src/img/프로젝트구조.png" width =400px>
     - Frontend : React.js
     - Backend : Spring Boot
     - Database : MySQL
     - Deploy : AWS EC2, RDS, S3
-- [Sequence diagram]
+  
+- [**Sequence diagram**]
     - 프로젝트 팀매칭 시퀸스 다이어그램
       <br><img src="Src/img/SequenceDiagram1.png"><br>
     - 이력서 작성 시퀸스 다이어그램
       <br><img src="Src/img/SequenceDiagram2.png"><br>
     - 프로젝트 팀 지원 시퀸스 다이어그램
       <br><img src="Src/img/SequenceDiagram3.png"><br>
-- [ERD]
+- [**ERD**]
   <br><img src="Src/img/ERD.png" ><br>
-- [API명세서]
+- [**API명세서**]
   <br><img src="Src/img/API명세.png" width = 400px><br>
 
 ### 3. 서비스 구현 결과
@@ -106,5 +107,5 @@
 #### 최종발표
 <a href=''></a>최종보고서<br>
 <a href=''></a>최종발표자료<br>
-<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_1_OSSProj_02_DevOops_%EB%B2%94%EC%9C%84_%EC%9D%BC%EC%A0%95_%EC%9D%B4%EC%8A%88%EA%B4%80%EB%A6%AC.md'></a>최종회의록<br>
-<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_2_OSSProj_02_DevOops_%ED%9A%8C%EC%9D%98%EB%A1%9D.md'></a>범위 및 이슈 관리<br>
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_1_OSSProj_02_DevOops_%EB%B2%94%EC%9C%84_%EC%9D%BC%EC%A0%95_%EC%9D%B4%EC%8A%88%EA%B4%80%EB%A6%AC.md'>최종회의록</a><br>
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_2_OSSProj_02_DevOops_%ED%9A%8C%EC%9D%98%EB%A1%9D.md'>범위 및 이슈 관리</a><br>
