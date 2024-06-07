@@ -24,22 +24,22 @@
 #### 2. 설계 및 구현
 - [프로젝트 구조]
     <br>
-    <img src="Src/img/프로젝트구조.png" width =200px>
+    <img src="Src/img/프로젝트구조.png" width =400px>
     - Frontend : React.js
     - Backend : Spring Boot
     - Database : MySQL
     - Deploy : AWS EC2, RDS, S3
 - [Sequence diagram]
     - 프로젝트 팀매칭 시퀸스 다이어그램
-    <img src="Src/img/SequenceDiagram1.png" width =400px>
+      <br><img src="Src/img/SequenceDiagram1.png"><br>
     - 이력서 작성 시퀸스 다이어그램
-    <img src="Src/img/SequenceDiagram2.png" width =400px>
+      <br><img src="Src/img/SequenceDiagram2.png"><br>
     - 프로젝트 팀 지원 시퀸스 다이어그램
-    <img src="Src/img/SequenceDiagram3.png" width = 400px>
+      <br><img src="Src/img/SequenceDiagram3.png"><br>
 - [ERD]
-    <img src="Src/img/ERD.png" width = 400px>
+  <br><img src="Src/img/ERD.png" ><br>
 - [API명세서]
-    <img src="Src/img/API명세.png" width = 400px>
+  <br><img src="Src/img/API명세.png" width = 400px><br>
 
 ### 3. 서비스 구현 결과
 
