@@ -111,9 +111,10 @@
 </details>
 
 # 주요 기능별 파일 경로
-## 회원가입 및 로그인
+## Backend 
+### 회원가입 및 로그인
 
-### 구글 로그인
+#### 구글 로그인
 
 | 파일명                | 역할       | 설명                                              |
 |-----------------------|------------|---------------------------------------------------|
@@ -124,7 +125,7 @@
 | **service**           |            |                                                   |
 | LoginService.java     | Service    | 구글 로그인 관련 비즈니스 로직 구현                |
 
-### 일반 회원가입 및 로그인
+#### 일반 회원가입 및 로그인
 
 | 파일명                | 역할       | 설명                                              |
 |-----------------------|------------|---------------------------------------------------|
@@ -154,4 +155,69 @@
 | ProjectDTO.java               | Data Transfer Object (DTO)                                | Controller와 Service 간 데이터 전송 객체                                                    |
 | **mapper**                    |                                                           |                                                                                           |
 | ProjectMapper.java            | Mapper                                                    | DTO와 엔티티 간의 변환 담당                                                               |
+
+### 강의 개설 및 관리
+
+| 파일명                | 역할       | 설명                                                      |
+|-----------------------|------------|-----------------------------------------------------------|
+| **controller**        |            |                                                           |
+| CourseController.java | Controller | 사용자 요청을 받아 서비스 메소드 호출, 강의 생성, 업데이트, 삭제, 조회 등의 작업 수행   |
+| **domain**            |            |                                                           |
+| Course.java           | Domain     | 데이터베이스 테이블과 매핑되는 강의 엔티티 클래스                                          |
+| **dto**               |            |                                                           |
+| CourseDTO.java        | DTO        | Controller와 Service 간 데이터 전송 객체                                               |
+| **mapper**            |            |                                                           |
+| CourseMapper.java     | Mapper     | DTO와 엔티티 간의 변환 담당                                                              |
+| **repository**        |            |                                                           |
+| CourseRepository.java | Repository | 데이터베이스와 상호작용, CRUD 작업 수행                                                  |
+| **service**           |            |                                                           |
+| CourseService.java    | Service    | 비즈니스 로직 구현, 데이터 접근 레이어와 상호작용                                          |
+
+### 이력서 작성 및 편집
+
+| 파일명                | 역할       | 설명                                                      |
+|-----------------------|------------|-----------------------------------------------------------|
+| **controller**        |            |                                                           |
+| UserController.java   | Controller | 이력서 작성, 수정, 삭제 및 조회 관련 사용자 요청을 받아 서비스 메소드 호출 |
+| **domain**            |            |                                                           |
+| User.java             | Domain     | 데이터베이스 테이블과 매핑되는 사용자 엔티티 클래스                                         |
+| **dto**               |            |                                                           |
+| UserDTO.java          | DTO        | Controller와 Service 간 데이터 전송 객체                                               |
+| **mapper**            |            |                                                           |
+| UserMapper.java       | Mapper     | DTO와 엔티티 간의 변환 담당                                                              |
+| **repository**        |            |                                                           |
+| UserRepository.java   | Repository | 데이터베이스와 상호작용, CRUD 작업 수행                                                  |
+| **service**           |            |                                                           |
+| UserService.java      | Service    | 이력서 관련 비즈니스 로직 구현, 데이터 접근 레이어와 상호작용                              |
+
+## Frontend
+
+### 회원가입 및 로그인
+
+| 기능       | 경로                                      |
+|------------|-------------------------------------------|
+| 회원가입   | frontend/src/pages/Join                   |
+| 로그인     | frontend/src/pages/Login                  |
+
+### 팀 빌딩 및 관리
+
+| 기능                         | 경로                                                   |
+|------------------------------|--------------------------------------------------------|
+| 강의별 프로젝트 메인페이지    | frontend/src/pages/project/ListDongguk                 |
+| 강의별 프로젝트 상세페이지    | frontend/src/pages/project/DetailDongguk               |
+| 강의별 프로젝트 관리페이지    | frontend/src/pages/user/project/manage                 |
+
+### 강의 개설 및 관리
+
+| 기능         | 경로                                                   |
+|--------------|--------------------------------------------------------|
+| 강의 개설    | frontend/src/pages/user/project/create                 |
+| 강의 개설 관리 | frontend/src/pages/project/user/project/manage          |
+
+### 이력서 작성 및 편집
+
+| 기능        | 경로                                                   |
+|-------------|--------------------------------------------------------|
+| 이력서 작성 | frontend/src/pages/Resume/createResume                 |
+| 이력서 뷰어 | frontend/src/pages/Resume/ViewResume                   |
 
