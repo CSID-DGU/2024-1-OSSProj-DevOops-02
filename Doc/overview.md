@@ -221,3 +221,27 @@
 | 이력서 작성 | frontend/src/pages/Resume/createResume                 |
 | 이력서 뷰어 | frontend/src/pages/Resume/ViewResume                   |
 
+
+# 이전 프로젝트 참고 비율
+
+<div style="display: flex; justify-content: space-around; align-items: center; width: 100%;">
+
+  <div style="text-align: center;">
+    <h3>백엔드</h3>
+    <div style="width: 200px; height: 200px; border-radius: 50%; background: conic-gradient(#4CAF50 0% 20%, #FF5722 20% 100%); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+      <span style="color: white; font-size: 20px;">20%</span>
+    </div>
+  </div>
+
+  <div style="text-align: center;">
+    <h3>프론트엔드</h3>
+    <div style="width: 200px; height: 200px; border-radius: 50%; background: conic-gradient(#2196F3 0% 70%, #FF5722 70% 100%); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+      <span style="color: white; font-size: 20px;">70%</span>
+    </div>
+  </div>
+
+</div>
+
+### 참고 레포지토리
+[티밍 레포지토리](https://github.com/CSID-DGU/2023-1-OSSP1-colorful-7?tab=readme-ov-file)
+
