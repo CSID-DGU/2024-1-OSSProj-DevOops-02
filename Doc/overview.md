@@ -110,10 +110,48 @@
 └── tsconfig.json<br>
 </details>
 
-# 주요 기능별 로직
+# 주요 기능별 파일 경로
 ## 회원가입 및 로그인
+
 ### 구글 로그인
-- Controller 폴더 - LoginController.java
-- dto 폴더 - LoginDTO.java
-- service 폴더 - LoginService.java
+
+| 파일명                | 역할       | 설명                                              |
+|-----------------------|------------|---------------------------------------------------|
+| **controller**        |            |                                                   |
+| LoginController.java  | Controller | 구글 로그인 관련 사용자 요청을 받아 서비스 메소드 호출 |
+| **dto**               |            |                                                   |
+| LoginDTO.java         | DTO        | 구글 로그인 관련 데이터 전송 객체                   |
+| **service**           |            |                                                   |
+| LoginService.java     | Service    | 구글 로그인 관련 비즈니스 로직 구현                |
+
+### 일반 회원가입 및 로그인
+
+| 파일명                | 역할       | 설명                                              |
+|-----------------------|------------|---------------------------------------------------|
+| **controller**        |            |                                                   |
+| UserController.java   | Controller | 일반 회원가입 및 로그인 관련 사용자 요청을 받아 서비스 메소드 호출 |
+| **domain**            |            |                                                   |
+| User.java             | Domain     | 일반 회원가입 및 로그인을 위한 사용자 엔티티 클래스   |
+| **dto**               |            |                                                   |
+| UserDTO.java          | DTO        | 일반 회원가입 및 로그인 관련 데이터 전송 객체        |
+| **mapper**            |            |                                                   |
+| UserMapper.java       | Mapper     | 일반 회원가입 및 로그인 관련 DTO와 엔티티 간의 변환 담당 |
+| **service**           |            |                                                   |
+| UserService.java      | Service    | 일반 회원가입 및 로그인 관련 비즈니스 로직 구현      |
+
+### 팀 빌딩 및 관리
+| 파일명                        | 역할                                                      | 설명                                                                                      |
+|-------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **controller**                |                                                           |                                                                                           |
+| ProjectController.java        | Controller                                                | 사용자 요청을 받아 서비스 메소드 호출, 프로젝트 생성, 업데이트, 삭제, 조회 등의 작업 수행   |
+| **service**                   |                                                           |                                                                                           |
+| ProjectService.java           | Service                                                   | 비즈니스 로직 구현, 데이터 접근 레이어와 상호작용                                           |
+| **repository**                |                                                           |                                                                                           |
+| ProjectRepository.java        | Repository                                                | 데이터베이스와 상호작용, CRUD 작업 수행                                                    |
+| **domain**                    |                                                           |                                                                                           |
+| Project.java                  | Domain                                                    | 데이터베이스 테이블과 매핑되는 엔티티 클래스                                                |
+| **dto**                       |                                                           |                                                                                           |
+| ProjectDTO.java               | Data Transfer Object (DTO)                                | Controller와 Service 간 데이터 전송 객체                                                    |
+| **mapper**                    |                                                           |                                                                                           |
+| ProjectMapper.java            | Mapper                                                    | DTO와 엔티티 간의 변환 담당                                                               |
 
