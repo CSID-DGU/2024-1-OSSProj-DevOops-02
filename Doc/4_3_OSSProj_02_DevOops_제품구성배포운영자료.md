@@ -75,7 +75,15 @@
 ## 3. 프로젝트 제품 운영 방법  
 
 1. 제품 시연을 위한 환경 구성 및 운영방법
-- 배포된 사이트를 사용 : <a href = 'https://frontend.d1h9h7iqy0x1qc.amplifyapp.com/'>TeamEasy</a>
+   - 실행방법
+     - Frontend 실행 방법
+       1) frontend 폴더로 이동
+       2) npm install로 필요한 패키지 설치
+       3) npm start로 실행
+     - Backend 실행 방법
+       1) backend 폴더로 이동
+       2) ./gradlew build로 빌드
+       3) java -jar build/libs/프로젝트명.jar로 실행
 
 2. 제품의 시연 시나리오
 
