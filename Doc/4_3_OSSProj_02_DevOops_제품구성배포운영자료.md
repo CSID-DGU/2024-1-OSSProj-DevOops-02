@@ -4,7 +4,7 @@
 
 ## 1. 프로젝트 제품 구성
 
-- *프로젝트 제품의 구성과 배치 내역을 그림과 글로 설명*  
+- overview 파일로 대체하도록 하겠습니다.: <a href= 'https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_4_OSSProj_02_DevOops_Overview.md'>overview</a>
   
 ## 2. 프로젝트 제품 배포 방법  
 
@@ -102,4 +102,5 @@
 
 7) 마이페이지
    <img src ='../Src/img/시연7.png'><br>
+
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02'>README 돌아가기</a>
