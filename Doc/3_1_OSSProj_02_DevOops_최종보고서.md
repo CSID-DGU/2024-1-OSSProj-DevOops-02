@@ -310,3 +310,4 @@
 4. 작품설명용 사진 1~2장  
     * jpg파일 별도 제출(파일명: eg. Tnn_팀명_4_개념설계.jpg)  
 
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02'>README 돌아가기</a>

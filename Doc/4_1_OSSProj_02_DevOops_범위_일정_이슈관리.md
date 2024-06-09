@@ -155,3 +155,5 @@ dialect: org.hibernate.dialect.MySQL8InnoDBDialect
 -> 사용하지 않는 변수가 있어서 생기는 오류였다.
 
 - src/pages/Main/PopularProjectListSection/PopularProjectListSection.tsx, src/pages/Main/RecentProjectListSection/RecentProjectListSection.tsx, src/pages/Main/RecommendProjectListSection/RecommendProjectListSection.tsx 파일에서 projectList 변수 들어간 로직 수정
+
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02'>README 돌아가기</a>

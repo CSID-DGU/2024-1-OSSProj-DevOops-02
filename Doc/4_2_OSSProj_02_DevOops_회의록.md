@@ -384,3 +384,5 @@ https://github.com/CSID-DGU/2023-1-OSSProj-M.C.theMax-7
 ## 다음 회의까지 준비해올 내용
 - 배포 과정에서 생긴 이슈 사항 깃허브에 정리해두기
 - 각자 본인이 맡은 서류 작성
+
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02'>README 돌아가기</a>

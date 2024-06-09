@@ -15,3 +15,5 @@
 
 - *프로젝트 제품의 시연을 위한 환경구성 및 운영방법 설명*
 - *프로젝트 제품의 시연 시나리오 제시*  
+
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02'>README 돌아가기</a>
