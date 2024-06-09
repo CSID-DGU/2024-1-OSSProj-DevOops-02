@@ -207,7 +207,7 @@
        - 자세한 배포 과정 및 문제 해결 방법
          - <a href="https://velog.io/@naninaniyoyoyoyo/AWS-Amplify%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%B0%B0%ED%8F%AC-GitHub-Repository-%ED%99%9C%EC%9A%A9">Amplify로 리액트 배포 (GitHub Repository 활용)</a>
          - <a href ="https://velog.io/@naninaniyoyoyoyo/React-AWS-Amplify-%EB%B0%B0%ED%8F%AC-%EA%B3%BC%EC%A0%95-%EC%A4%91-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0">React AWS Amplify 배포 과정 중 에러 해결</a>
-       - **백엔드 배포** (AWS EC2를 이용한 배포)
+       - **백엔드 배포** (AWS Elastic Beanstalk를 이용한 배포)
          1.	**Jib 의존성 추가**
             - build.gradle 파일에 Jib 플러그인 추가 및 설정.
             - 명령어: ./gradlew jib 실행하여 Docker 이미지를 빌드하고 Docker Hub에 푸시.
