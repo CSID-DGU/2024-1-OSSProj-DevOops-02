@@ -105,6 +105,6 @@
 
 #### 최종발표
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/3_1_OSSProj_02_DevOops_%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C.md'>최종보고서</a><br>
-<a href=''></a>최종발표자료<br>
+<a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/3_2_OSSProj_02_DevOops_%EC%B5%9C%EC%A2%85%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf'>최종발표자료</a><br>
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_1_OSSProj_02_DevOops_%EB%B2%94%EC%9C%84_%EC%9D%BC%EC%A0%95_%EC%9D%B4%EC%8A%88%EA%B4%80%EB%A6%AC.md'>최종회의록</a><br>
 <a href='https://github.com/CSID-DGU/2024-1-OSSProj-DevOops-02/blob/main/Doc/4_2_OSSProj_02_DevOops_%ED%9A%8C%EC%9D%98%EB%A1%9D.md'>범위 및 이슈 관리</a><br>
